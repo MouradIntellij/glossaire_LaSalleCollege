@@ -73,7 +73,7 @@ if ($user_count == 0) {
         ['jean.dupont@lcieducation.com', password_hash('jean123', PASSWORD_DEFAULT), 'Dupont', 'Jean', 'etudiant']
     ];
 
-    $stmt = $pdo->prepare("INSERT INTO users (email, password, nom, prenom, role) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO users (email, password, nom, prenom, role) VALUES (?, ?, ?, ?, ?) ON CONFLICT (email) DO NOTHING");
     foreach ($test_users as $user) {
         $stmt->execute($user);
     }
