@@ -1,14 +1,8 @@
 {
-    "version": 2,
-    "functions": {
-      "index.php": {
-        "runtime": "php@8.2"
-      }
-    },
-    "routes": [
+    "rewrites": [
       {
-        "src": "/(.*)",
-        "dest": "/index.php"
+        "source": "/(.*)",
+        "destination": "/index.php"
       }
     ]
   }
