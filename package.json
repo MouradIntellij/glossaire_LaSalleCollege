@@ -1,7 +1,7 @@
 {
-    "name": "glossaire-lasalle",
+    "name": "glossary",
     "version": "1.0.0",
-    "description": "Glossaire Informatique Bilingue - Collège LaSalle",
-    "scripts": {},
-    "dependencies": {}
-  }
+    "scripts": {
+        "build": "your-build-command-here"
+    }
+}
