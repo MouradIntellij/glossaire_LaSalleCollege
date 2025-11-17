@@ -3,7 +3,7 @@ services:
     name: glossary-app
     runtime: php
     plan: free
-    buildCommand: echo "Build complete"
+    buildCommand: "composer install"
     startCommand: "php -S 0.0.0.0:10000 index.php"
     envVars:
       - key: PHP_VERSION
