@@ -1,8 +1,18 @@
 {
-    "rewrites": [
+    "version": 2,
+    "builds": [
       {
-        "source": "/(.*)",
-        "destination": "/index.php"
+        "src": "index.php",
+        "use": "@vercel/php"
       }
-    ]
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.php"
+      }
+    ],
+    "env": {
+      "PHP_VERSION": "8.2"
+    }
   }
